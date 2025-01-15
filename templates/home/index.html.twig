@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<section>
+		<style>
+			.important {
+				color: red
+			}
+		</style>
+		<h2>Présentation</h2>
+		<p>Voici un exemple de page HTML avec plusieurs bugs!</p>
+	</section>
+
+	<div class="content">
+		<p class="important">C'est une section importante!</p>
+		<p>Oups, oublie d'avoir une balise
+			<strong>fermée pour ce texte...</p>
+		</p>
+		<p>C'est une autre section sans fermeture correcte.</p>
+		<img src="image.jpg" alt="Une image"/>
+	</div>
+{% endblock %}
