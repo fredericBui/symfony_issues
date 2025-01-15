@@ -11,6 +11,12 @@ final class ContactController extends AbstractController
     #[Route('/contact', name: 'app_contact')]
     public function index(): Response
     {
+        $age = 0;
+        if ($age > 18) {
+            print("hey");
+        } elseif ($age < 18) {
+            print("ho");
+        }
         return $this->render('contact/index.html.twig', [
             'controller_name' => 'ContactController',
         ]);
