@@ -15,10 +15,12 @@ final class ContactController extends AbstractController
         if ($age > 18) {
             print("hey");
         } elseif ($age < 18) {
-            print("ho");
+            print"ho";
         }
         return $this->render('contact/index.html.twig', [
             'controller_name' => 'ContactController',
         ]);
     }
 }
+
+
