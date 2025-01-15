@@ -1,0 +1,60 @@
+<style>
+	/* Mauvaise pratique : non spécification de certains éléments de style */
+	.navbar {
+		background-color: #333;
+		padding: 10px;
+	}
+
+	.navbar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.navbar li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.navbar a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/* Problème de manque de focus pour l'accessibilité */
+	.navbar a:hover {
+		background-color: #555;
+	}
+
+	/* Mauvaise pratique de gestion des tailles responsives */
+	.navbar {
+		width: 100%;
+		font-size: 18px;
+	}
+</style>
+
+<nav class="navbar">
+	<ul>
+		<li><a href="/home">Home</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li><a href="/product">Product</a></li>
+		<li><a href="/post">Post</a></li>
+	</ul>
+</nav>
+
+<script>
+	// Mauvaise pratique : déclaration d'une variable sans utilisation
+let unusedVar = "this is an unused variable";
+
+// Mauvaise gestion des événements, pas de nettoyage
+document.addEventListener("DOMContentLoaded", function () { // Code inutile ou redondant
+document.querySelector("nav").addEventListener("click", function () {
+alert("Navigation clicked!");
+});
+});
+
+// Mauvaise pratique : fonction déclarée mais non utilisée
+function unusedFunction() {
+console.log("This function is never used.");
+}
+</script>
